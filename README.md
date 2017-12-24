@@ -19,3 +19,18 @@ ________
 ### Using kaptain-menu-debian
 
 
+    docker run -v ${HOME}/bin:/userbin \
+               -v ${HOME}/.config/docker:/menu \
+               -v /etc/localtime:/etc/localtime:ro \
+               -v /tmp/.X11-unix:/tmp/.X11-unix \
+               -v /tmp/.docker.xauth:/tmp/.docker.xauth \
+               -v ${HOME}/.Xauthority:${HOME}/.Xauthority \
+               -e DISPLAY=unix${DISPLAY} \
+               -e KPT_USER=${USER} \
+               -e KPT_UID=${UID} \
+               -e KPT_HOME=${HOME} \
+               -e KPT_MENU=kaptain-menu-sample \
+               --name=kaptain-menu \
+               --rm \
+           kaptain-menu-debian:latest
+
