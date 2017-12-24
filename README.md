@@ -1,4 +1,9 @@
 # EarthWalkSoftware/kaptain-menu-debian
+
+### kaptain-menu-debian
+
+*kaptain-menu-debian* is a docker image, layered on top of *EarthWalkSoftware/kaptain-debian*, which is used to provide a framework for implementing menu templates for use with *Kaptain*.  The framework allows loading, modification (through *Kaptain*), and storage of menu templates, and the generation of the command line for direct execution and/or storage as a bash command script.
+
 _____________________
 
 ### Kaptain
@@ -11,6 +16,6 @@ _____________________
 
 ________
 
-### kaptain-menu-debian
+### Using kaptain-menu-debian
 
 
